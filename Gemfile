@@ -29,6 +29,15 @@ gem 'bootstrap-sass'
 gem 'devise'
 #paperclip para imagenes
 gem 'paperclip', '~> 4.2'
+#Heroku
+group :development, :test do
+     gem 'sqlite3'
+end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
